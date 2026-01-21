@@ -1,5 +1,14 @@
 [
   {
+    "compatibility": 0,
+    "directory": "Mario Kart 8 Deluxe",
+    "releases": [
+      {
+        "id": "0100152000022000"
+      }
+    ]
+  },
+  {
     "compatibility": 1,
     "directory": "Pokémon Legends: Z-A",
     "releases": [
