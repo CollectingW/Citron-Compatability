@@ -37,6 +37,15 @@
   },
   {
     "compatibility": 0,
+    "directory": "Mario Party Superstars",
+    "releases": [
+      {
+        "id": "01006FE013472000"
+      }
+    ]
+  },
+  {
+    "compatibility": 0,
     "directory": "Metroid Dread",
     "releases": [
       {
