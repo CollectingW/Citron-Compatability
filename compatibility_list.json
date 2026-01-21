@@ -144,6 +144,24 @@
     ]
   },
   {
+    "compatibility": 1,
+    "directory": "The Legend of Zelda: Echoes of Wisdom",
+    "releases": [
+      {
+        "id": "01008CF01BAAC000"
+      }
+    ]
+  },
+  {
+    "compatibility": 1,
+    "directory": "The Legend of Zelda: Skyward Sword HD",
+    "releases": [
+      {
+        "id": "01002DA013484000"
+      }
+    ]
+  },
+  {
     "compatibility": 0,
     "directory": "The Legend of Zelda: Tears of the Kingdom",
     "releases": [
