@@ -19,6 +19,15 @@
   },
   {
     "compatibility": 1,
+    "directory": "Pokémon Scarlet",
+    "releases": [
+      {
+        "id": "0100A3D008C5C000"
+      }
+    ]
+  },
+  {
+    "compatibility": 1,
     "directory": "Super Mario Bros. Wonder",
     "releases": [
       {
