@@ -208,6 +208,15 @@
   },
   {
     "compatibility": 0,
+    "directory": "SpongeBob SquarePants: The Cosmic Shake",
+    "releases": [
+      {
+        "id": "01009FB0172F4000"
+      }
+    ]
+  },
+  {
+    "compatibility": 0,
     "directory": "Super Mario 3D World   Bowser's Fury",
     "releases": [
       {
