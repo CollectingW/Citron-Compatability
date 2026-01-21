@@ -1,6 +1,15 @@
 [
   {
     "compatibility": 0,
+    "directory": "Animal Crossing: New Horizons",
+    "releases": [
+      {
+        "id": "01006F8002326000"
+      }
+    ]
+  },
+  {
+    "compatibility": 0,
     "directory": "Clubhouse Games: 51 Worldwide Classics",
     "releases": [
       {
