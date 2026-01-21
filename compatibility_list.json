@@ -145,6 +145,15 @@
   },
   {
     "compatibility": 0,
+    "directory": "Super Mario Party Jamboree",
+    "releases": [
+      {
+        "id": "0100965017338000"
+      }
+    ]
+  },
+  {
+    "compatibility": 0,
     "directory": "Super Monkey Ball Banana Rumble",
     "releases": [
       {
