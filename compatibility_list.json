@@ -36,6 +36,15 @@
     ]
   },
   {
+    "compatibility": 0,
+    "directory": "Super Mario 3D World   Bowser's Fury",
+    "releases": [
+      {
+        "id": "010028600EBDA000"
+      }
+    ]
+  },
+  {
     "compatibility": 1,
     "directory": "Super Mario Bros. Wonder",
     "releases": [
