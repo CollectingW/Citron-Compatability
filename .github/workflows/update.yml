@@ -1,32 +1,31 @@
 name: Update Compatibility List
 on:
   issues:
-    types: [labeled, edited, closed, reopened]
+    types: [labeled, unlabeled, edited, closed]
 
 jobs:
   build:
+    # Only run if any newer issue is currently tagged as 'verified'
     if: contains(github.event.issue.labels.*.name, 'verified')
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
-      - uses: actions/checkout@v3
-      
+      - uses: actions/checkout@v4
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
-          python-version: '3.x'
-          
+          python-version: '3.11'
       - name: Install dependencies
         run: pip install requests
-
-      - name: Generate List
+      - name: Run Generator
         run: python scripts/generate_list.py
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
       - name: Commit and Push
         run: |
           git config --global user.name 'Citron-Bot'
           git config --global user.email 'bot@citron-emu.org'
           git add compatibility_list.json
-          git commit -m "Update compatibility list from Issue #${{ github.event.issue.number }}" || exit 0
+          git commit -m "Auto-update list from Issue #${{ github.event.issue.number }}" || exit 0
           git push
