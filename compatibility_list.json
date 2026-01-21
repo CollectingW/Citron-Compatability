@@ -73,6 +73,15 @@
   },
   {
     "compatibility": 1,
+    "directory": "Luigi's Mansion 3",
+    "releases": [
+      {
+        "id": "0100DCA0064A6000"
+      }
+    ]
+  },
+  {
+    "compatibility": 1,
     "directory": "Mario & Luigi: Brothership",
     "releases": [
       {
