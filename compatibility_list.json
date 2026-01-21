@@ -1,6 +1,15 @@
 [
   {
     "compatibility": 0,
+    "directory": "1-2-Switch",
+    "releases": [
+      {
+        "id": "01000320000CC000"
+      }
+    ]
+  },
+  {
+    "compatibility": 0,
     "directory": "Animal Crossing: New Horizons",
     "releases": [
       {
