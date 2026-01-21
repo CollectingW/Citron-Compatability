@@ -10,6 +10,15 @@
   },
   {
     "compatibility": 1,
+    "directory": "Hyrule Warriors: Definitive Edition",
+    "releases": [
+      {
+        "id": "0100AE00096EA000"
+      }
+    ]
+  },
+  {
+    "compatibility": 1,
     "directory": "Mario & Luigi: Brothership",
     "releases": [
       {
