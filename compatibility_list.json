@@ -1,5 +1,14 @@
 [
   {
+    "compatibility": 1,
+    "directory": "Hyrule Warriors: Age of Calamity",
+    "releases": [
+      {
+        "id": "01002B00111A2000"
+      }
+    ]
+  },
+  {
     "compatibility": 0,
     "directory": "Mario Kart 8 Deluxe",
     "releases": [
@@ -104,6 +113,15 @@
     "releases": [
       {
         "id": "01006A800016E000"
+      }
+    ]
+  },
+  {
+    "compatibility": 0,
+    "directory": "The Legend of Zelda: Tears of the Kingdom",
+    "releases": [
+      {
+        "id": "0100F2C0115B6000"
       }
     ]
   }
