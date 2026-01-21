@@ -360,6 +360,15 @@
     ]
   },
   {
+    "compatibility": 3,
+    "directory": "Tomb Raider I-III Remastered",
+    "releases": [
+      {
+        "id": "010024601BB16000"
+      }
+    ]
+  },
+  {
     "compatibility": 1,
     "directory": "Xenoblade Chronicles X: Definitive Edition",
     "releases": [
