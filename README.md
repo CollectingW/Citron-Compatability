@@ -18,7 +18,7 @@ We have designed a seamless bridge between the Citron Emulator and this GitHub R
 ### 2. The Browser Hand-off
 * Once confirmed, Citron generates a specialized URL that points to this repository’s Issue Form.
 * **Auto-fill:** Using the `compat.yml` template, the URL automatically populates the **Game Name** in the title and the **Title ID** in the form field.
-* **User Input:** The user only needs to select the **Status** (Perfect, Playable, etc.) and type their hardware specs or any glitches they encountered in the **User Notes** section. Preferably, very detailed reports & engagement will be the ones that are verified for use. Any non-detailed posts or otherwise barebones submissions will either be automatically rejected or will be told to elaborate further, and in worst case scenarios, the user will be blocked from submitting new reports.
+* **User Input:** The user only needs to select the **Status** (Perfect, Playable, etc.) and type their hardware specs, as well as any glitches and useful information as well as their Settings .json file they provide in the **User Notes** section. Preferably, very detailed reports & engagement will be the ones that are verified for use. Any non-detailed posts or otherwise barebones submissions will either be automatically rejected or will be told to elaborate further, and in worst case scenarios, the user will be blocked from submitting new reports.
 
 ### 3. Verification & Automation
 * **Submission:** Once the user hits "Submit," a new issue is created in this repository.
