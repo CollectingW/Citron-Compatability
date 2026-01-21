@@ -9,6 +9,15 @@
     ]
   },
   {
+    "compatibility": 0,
+    "directory": "MONSTER HUNTER GENERATIONS ULTIMATE",
+    "releases": [
+      {
+        "id": "0100770008DD8000"
+      }
+    ]
+  },
+  {
     "compatibility": 1,
     "directory": "Pokémon Legends: Z-A",
     "releases": [
