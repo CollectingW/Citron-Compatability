@@ -118,6 +118,15 @@
   },
   {
     "compatibility": 0,
+    "directory": "Mario Strikers: Battle League",
+    "releases": [
+      {
+        "id": "010019401051C000"
+      }
+    ]
+  },
+  {
+    "compatibility": 0,
     "directory": "Mario Tennis Aces",
     "releases": [
       {
