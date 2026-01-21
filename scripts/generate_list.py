@@ -3,7 +3,6 @@ import requests
 import json
 import re
 
-# Mapping human words from the C++ Dialog to the emulator's ID system
 STATUS_MAP = {
     "perfect": 0,
     "playable": 1,
@@ -23,14 +22,13 @@ def main():
             with open(file_path, "r", encoding="utf-8") as f:
                 existing_list = json.load(f)
                 for entry in existing_list:
-                    # Use the first release ID as the key
                     if entry.get("releases"):
                         tid = entry["releases"][0]["id"].upper()
                         compat_data[tid] = entry
         except Exception as e:
             print(f"Note: Could not parse existing list, starting fresh. Error: {e}")
 
-    # --- 2. Fetch 'verified' issues from GitHub ---
+    # Fetch 'verified' issues from GitHub
     url = f"https://api.github.com/repos/{repo}/issues?labels=verified&state=all"
     headers = {"Authorization": f"token {token}"}
     response = requests.get(url, headers=headers)
@@ -39,31 +37,35 @@ def main():
         issues = response.json()
         for issue in issues:
             title = issue.get("title", "")
-            body = issue.get("body", "") 
+            body = issue.get("body", "")
+            if not body:
+                continue
+            
             body_lower = body.lower()
             
-            # 1. The Game Name is the Issue Title
-            game_name = title.strip()
-
-            # 2. Extract Title ID from the BODY (GitHub Form format)
-            # This looks for the 16-char ID following the '### Title ID' header
             id_match = re.search(r"### Title ID\s+([0-9A-Fa-f]{16})", body)
             
             if not id_match:
-                # Fallback: check if it's still using the old [ID] format in title
                 id_match = re.search(r"\[([0-9A-Fa-f]{16})\]", title)
                 if not id_match:
                     continue
                 
             title_id = id_match.group(1).upper()
 
-            # 3. Determine status
+            game_name = re.sub(r"\[[0-9A-Fa-f]{16}\]", "", title).strip()
+
+            # Determine status
             status_value = 99 
             for key, value in STATUS_MAP.items():
-                if f"### status\n{key}" in body_lower: # Form format
+                # Regex looks for "### Status" followed by any amount of space/newlines, 
+                # then the specific status word.
+                status_pattern = rf"### status\s+{re.escape(key)}"
+                if re.search(status_pattern, body_lower):
                     status_value = value
                     break
-                if f"status:** {key}" in body_lower: # Issues format
+                
+                # Legacy check for manual issues
+                if f"status:** {key}" in body_lower:
                     status_value = value
                     break
 
