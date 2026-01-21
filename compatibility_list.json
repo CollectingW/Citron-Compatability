@@ -154,6 +154,15 @@
   },
   {
     "compatibility": 1,
+    "directory": "The Legend of Zelda: Breath of the Wild",
+    "releases": [
+      {
+        "id": "01007EF00011E000"
+      }
+    ]
+  },
+  {
+    "compatibility": 1,
     "directory": "The Legend of Zelda: Echoes of Wisdom",
     "releases": [
       {
@@ -176,6 +185,15 @@
     "releases": [
       {
         "id": "0100F2C0115B6000"
+      }
+    ]
+  },
+  {
+    "compatibility": 1,
+    "directory": "Xenoblade Chronicles X: Definitive Edition",
+    "releases": [
+      {
+        "id": "0100453019AA8000"
       }
     ]
   }
