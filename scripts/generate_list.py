@@ -37,9 +37,10 @@ def main():
         game_name = title.split("]", 1)[1].strip() if "]" in title else "Unknown Game"
 
         # Determine status from body
-        status_value = 99 # Default: Not Tested
+        status_value = 99
+        # Look for the bolded Status line
         for key, value in STATUS_MAP.items():
-            if key in body:
+            if f"**status:** {key}" in body:
                 status_value = value
                 break
 
