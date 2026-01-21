@@ -3,29 +3,50 @@ on:
   issues:
     types: [labeled, unlabeled, edited, closed]
 
+concurrency:
+  group: compat-list-update
+  cancel-in-progress: false
+
 jobs:
   build:
-    # Only run if any newer issue is currently tagged as 'verified'
     if: contains(github.event.issue.labels.*.name, 'verified')
     runs-on: ubuntu-latest
     permissions:
       contents: write
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # rebasing
+
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+
       - name: Install dependencies
         run: pip install requests
+
       - name: Run Generator
         run: python scripts/generate_list.py
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Commit and Push
         run: |
           git config --global user.name 'Citron-Bot'
           git config --global user.email 'bot@citron-emu.org'
+          
           git add compatibility_list.json
-          git commit -m "Auto-update list from Issue #${{ github.event.issue.number }}" || exit 0
-          git push
+          
+          # Only commit if the file actually changed
+          if git diff --staged --quiet; then
+            echo "No changes to compatibility_list.json. Skipping push."
+            exit 0
+          fi
+          
+          git commit -m "Auto-update list from Issue #${{ github.event.issue.number }}"
+          
+          # Pull latest changes and put our update on top of them
+          git pull --rebase origin main
+          
+          git push origin main
