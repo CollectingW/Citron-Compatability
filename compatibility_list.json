@@ -64,6 +64,15 @@
   },
   {
     "compatibility": 0,
+    "directory": "SUPER MARIO ODYSSEY",
+    "releases": [
+      {
+        "id": "0100000000010000"
+      }
+    ]
+  },
+  {
+    "compatibility": 0,
     "directory": "Super Smash Bros. Ultimate",
     "releases": [
       {
