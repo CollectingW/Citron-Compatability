@@ -1,0 +1,31 @@
+name: Compatibility Report
+description: Report how well a game runs on Citron.
+labels: ["compatibility"]
+body:
+  - type: dropdown
+    id: status
+    attributes:
+      label: Status
+      description: How well does the game run?
+      options:
+        - "Perfect"
+        - "Playable"
+        - "Ingame"
+        - "Intro/Menu"
+        - "Won't Boot"
+    validations:
+      required: true
+  - type: input
+    id: title_id
+    attributes:
+      label: Title ID
+      placeholder: "e.g. 0100000000010000"
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: User Notes & Specs
+      placeholder: "Tell us about your hardware and any glitches/extra information you'd like to report."
+    validations:
+      required: false
