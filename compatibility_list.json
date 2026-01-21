@@ -19,6 +19,15 @@
   },
   {
     "compatibility": 0,
+    "directory": "ARMS",
+    "releases": [
+      {
+        "id": "01009B500007C000"
+      }
+    ]
+  },
+  {
+    "compatibility": 0,
     "directory": "Clubhouse Games: 51 Worldwide Classics",
     "releases": [
       {
