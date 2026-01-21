@@ -190,6 +190,15 @@
   },
   {
     "compatibility": 0,
+    "directory": "Sonic Mania",
+    "releases": [
+      {
+        "id": "01009AA000FAA000"
+      }
+    ]
+  },
+  {
+    "compatibility": 0,
     "directory": "Splatoon 3",
     "releases": [
       {
