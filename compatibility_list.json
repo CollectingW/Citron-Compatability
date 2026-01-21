@@ -217,6 +217,15 @@
   },
   {
     "compatibility": 0,
+    "directory": "Stardew Valley",
+    "releases": [
+      {
+        "id": "0100E65002BB8000"
+      }
+    ]
+  },
+  {
+    "compatibility": 0,
     "directory": "Super Mario 3D World   Bowser's Fury",
     "releases": [
       {
