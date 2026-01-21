@@ -36,6 +36,15 @@
     ]
   },
   {
+    "compatibility": 4,
+    "directory": "F-ZERO 99",
+    "releases": [
+      {
+        "id": "0100CCF019C8C000"
+      }
+    ]
+  },
+  {
     "compatibility": 1,
     "directory": "Hyrule Warriors: Age of Calamity",
     "releases": [
