@@ -18,6 +18,15 @@
     ]
   },
   {
+    "compatibility": 1,
+    "directory": "Super Mario Bros. Wonder",
+    "releases": [
+      {
+        "id": "010015100B514000"
+      }
+    ]
+  },
+  {
     "compatibility": 0,
     "directory": "Super Smash Bros. Ultimate",
     "releases": [
