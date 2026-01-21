@@ -73,6 +73,15 @@
   },
   {
     "compatibility": 0,
+    "directory": "Mario Golf: Super Rush",
+    "releases": [
+      {
+        "id": "0100C9C00E25C000"
+      }
+    ]
+  },
+  {
+    "compatibility": 0,
     "directory": "Mario Kart 8 Deluxe",
     "releases": [
       {
@@ -203,6 +212,15 @@
     "releases": [
       {
         "id": "010015100B514000"
+      }
+    ]
+  },
+  {
+    "compatibility": 0,
+    "directory": "SUPER MARIO MAKER 2",
+    "releases": [
+      {
+        "id": "01009B90006DC000"
       }
     ]
   },
