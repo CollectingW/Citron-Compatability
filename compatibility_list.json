@@ -145,6 +145,15 @@
   },
   {
     "compatibility": 0,
+    "directory": "Red Dead Redemption",
+    "releases": [
+      {
+        "id": "01007820196A6000"
+      }
+    ]
+  },
+  {
+    "compatibility": 0,
     "directory": "Splatoon 3",
     "releases": [
       {
