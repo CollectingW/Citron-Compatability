@@ -15,6 +15,30 @@ body:
         - "Won't Boot"
     validations:
       required: true
+  - type: dropdown
+    id: build_type
+    attributes:
+      label: Build Type
+      description: Which version of Citron are you using?
+      options:
+        - "Stable"
+        - "Nightly"
+    validations:
+      required: true
+  - type: input
+    id: cpu
+    attributes:
+      label: CPU
+      placeholder: "e.g. Intel Core i7-13700K / Ryzen 7 7800X3D"
+    validations:
+      required: true
+  - type: input
+    id: gpu
+    attributes:
+      label: GPU
+      placeholder: "e.g. NVIDIA RTX 4070 / AMD Radeon RX 7900 XT"
+    validations:
+      required: true
   - type: input
     id: title_id
     attributes:
@@ -26,6 +50,6 @@ body:
     id: notes
     attributes:
       label: User Notes & Specs
-      placeholder: "Tell us about your hardware and any glitches/extra information you'd like to report. Also please make sure the Title of the issue is the games full name if you are manually submitting this report VIA the website."
+      placeholder: "Tell us about any glitches or extra information. If you're manually submitting, ensure the issue title is the game's full name. Please share your settings .json (Right-click game > Properties > Share Settings)."
     validations:
       required: false
