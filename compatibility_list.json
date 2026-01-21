@@ -18,6 +18,15 @@
     ]
   },
   {
+    "compatibility": 0,
+    "directory": "Pokémon Brilliant Diamond",
+    "releases": [
+      {
+        "id": "0100000011D90000"
+      }
+    ]
+  },
+  {
     "compatibility": 1,
     "directory": "Pokémon Legends: Z-A",
     "releases": [
