@@ -10,6 +10,24 @@
   },
   {
     "compatibility": 0,
+    "directory": "Metroid Dread",
+    "releases": [
+      {
+        "id": "010093801237C000"
+      }
+    ]
+  },
+  {
+    "compatibility": 1,
+    "directory": "Metroid Prime 4: Beyond",
+    "releases": [
+      {
+        "id": "010019A01E2F2000"
+      }
+    ]
+  },
+  {
+    "compatibility": 0,
     "directory": "MONSTER HUNTER GENERATIONS ULTIMATE",
     "releases": [
       {
