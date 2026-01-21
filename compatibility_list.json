@@ -9,6 +9,15 @@
     ]
   },
   {
+    "compatibility": 1,
+    "directory": "Mario & Luigi: Brothership",
+    "releases": [
+      {
+        "id": "01006D0017F7A000"
+      }
+    ]
+  },
+  {
     "compatibility": 0,
     "directory": "Mario Kart 8 Deluxe",
     "releases": [
@@ -50,6 +59,15 @@
     "releases": [
       {
         "id": "0100770008DD8000"
+      }
+    ]
+  },
+  {
+    "compatibility": 0,
+    "directory": "New Super Mario Bros. U Deluxe",
+    "releases": [
+      {
+        "id": "0100EA80032EA000"
       }
     ]
   },
