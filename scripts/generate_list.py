@@ -3,56 +3,60 @@ import requests
 import json
 import re
 
-# Mapping human words to the emulator's ID system
+# Mapping human words from the C++ Dialog to the emulator's ID system
 STATUS_MAP = {
     "perfect": 0,
     "playable": 1,
     "ingame": 3,
-    "intro": 4,
-    "wontboot": 5
+    "intro/menu": 4,
+    "won't boot": 5
 }
 
 def main():
     repo = os.getenv("GITHUB_REPOSITORY")
     token = os.getenv("GITHUB_TOKEN")
     
-    # Fetch all issues with the 'verified' label
+    # We fetch ALL issues that have the 'verified' label
     url = f"https://api.github.com/repos/{repo}/issues?labels=verified&state=all"
     headers = {"Authorization": f"token {token}"}
     response = requests.get(url, headers=headers)
-    issues = response.json()
+    
+    if response.status_code != 200:
+        return
 
+    issues = response.json()
     compat_data = {}
 
     for issue in issues:
         title = issue.get("title", "")
         body = issue.get("body", "").lower()
         
-        # Regex to find Title ID in brackets [01006A800016E000]
+        # 1. Extract Title ID from brackets
         id_match = re.search(r"\[([0-9A-Fa-f]{16})\]", title)
         if not id_match:
             continue
             
         title_id = id_match.group(1).upper()
+        
+        # 2. Extract Game Name
         game_name = title.split("]", 1)[1].strip() if "]" in title else "Unknown Game"
 
-        # Determine status from body
-        status_value = 99
-        # Look for the bolded Status line
+        # 3. Determine status by looking for "**Status:** Word" in the body
+        status_value = 99 # Default: Not Tested
         for key, value in STATUS_MAP.items():
-            if f"**status:** {key}" in body:
+            if f"status:** {key}" in body:
                 status_value = value
                 break
 
-        # Add to structure
+        # 4. Add to the dictionary
         compat_data[title_id] = {
             "compatibility": status_value,
             "directory": game_name,
             "releases": [{"id": title_id}]
         }
 
-    # Convert back to the list format the emulator expects
-    final_list = list(compat_data.values())
+    # Convert dictionary to a list and sort by name
+    final_list = sorted(compat_data.values(), key=lambda x: x['directory'])
 
     with open("compatibility_list.json", "w") as f:
         json.dump(final_list, f, indent=2)
