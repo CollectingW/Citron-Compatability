@@ -31,22 +31,15 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Commit and Push
+      - name: Commit and Push changes
         run: |
           git config --global user.name 'Citron-Bot'
           git config --global user.email 'bot@citron-emu.org'
-          
           git add compatibility_list.json
-          
-          # Only commit if the file actually changed
-          if git diff --staged --quiet; then
-            echo "No changes to compatibility_list.json. Skipping push."
-            exit 0
-          fi
-          
-          git commit -m "Auto-update list from Issue #${{ github.event.issue.number }}"
-          
-          # Pull latest changes and put our update on top of them
-          git pull --rebase origin main
-          
+    
+          # Only commit if there are actually changes
+          git diff --quiet && git diff --staged --quiet || git commit -m "Auto-update list from Issue #${{ github.event.issue.number }}"
+    
+          git pull --rebase -Xours origin main
+    
           git push origin main
