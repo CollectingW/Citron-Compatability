@@ -27,6 +27,15 @@
     ]
   },
   {
+    "compatibility": 0,
+    "directory": "Crash™ Team Racing Nitro-Fueled",
+    "releases": [
+      {
+        "id": "0100F9F00C696000"
+      }
+    ]
+  },
+  {
     "compatibility": 1,
     "directory": "Hyrule Warriors: Age of Calamity",
     "releases": [
