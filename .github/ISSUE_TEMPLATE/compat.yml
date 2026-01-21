@@ -19,7 +19,7 @@ body:
     id: build_type
     attributes:
       label: Build Type
-      description: Which version of Citron are you using?
+      description: Which version of Citron are you using? Please use the very latest releases when submitting a report.
       options:
         - "Stable"
         - "Nightly"
