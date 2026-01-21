@@ -154,6 +154,15 @@
   },
   {
     "compatibility": 0,
+    "directory": "POKKÉN TOURNAMENT DX",
+    "releases": [
+      {
+        "id": "0100B3F000BE2000"
+      }
+    ]
+  },
+  {
+    "compatibility": 0,
     "directory": "Pokémon Brilliant Diamond",
     "releases": [
       {
