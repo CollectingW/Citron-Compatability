@@ -39,20 +39,31 @@ def main():
         issues = response.json()
         for issue in issues:
             title = issue.get("title", "")
-            body = issue.get("body", "").lower()
+            body = issue.get("body", "") 
+            body_lower = body.lower()
             
-            # Extract Title ID [0100...]
-            id_match = re.search(r"\[([0-9A-Fa-f]{16})\]", title)
+            # 1. The Game Name is the Issue Title
+            game_name = title.strip()
+
+            # 2. Extract Title ID from the BODY (GitHub Form format)
+            # This looks for the 16-char ID following the '### Title ID' header
+            id_match = re.search(r"### Title ID\s+([0-9A-Fa-f]{16})", body)
+            
             if not id_match:
-                continue
+                # Fallback: check if it's still using the old [ID] format in title
+                id_match = re.search(r"\[([0-9A-Fa-f]{16})\]", title)
+                if not id_match:
+                    continue
                 
             title_id = id_match.group(1).upper()
-            game_name = title.split("]", 1)[1].strip() if "]" in title else "Unknown Game"
 
-            # Determine status
+            # 3. Determine status
             status_value = 99 
             for key, value in STATUS_MAP.items():
-                if f"status:** {key}" in body:
+                if f"### status\n{key}" in body_lower: # Form format
+                    status_value = value
+                    break
+                if f"status:** {key}" in body_lower: # Issues format
                     status_value = value
                     break
 
