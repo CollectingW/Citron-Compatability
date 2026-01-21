@@ -27,6 +27,15 @@
     ]
   },
   {
+    "compatibility": 1,
+    "directory": "Metroid Prime Remastered",
+    "releases": [
+      {
+        "id": "010012101468C000"
+      }
+    ]
+  },
+  {
     "compatibility": 0,
     "directory": "MONSTER HUNTER GENERATIONS ULTIMATE",
     "releases": [
