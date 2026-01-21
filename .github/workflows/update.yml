@@ -3,7 +3,6 @@ on:
   issues:
     types: [labeled, unlabeled, edited, closed]
 
-# This ensures only one bot runs at a time to prevent database corruption/race conditions
 concurrency:
   group: compat-list-update
   cancel-in-progress: false
@@ -27,12 +26,11 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
-      # We pull right before running the script to ensure we have the absolute latest JSON
       - name: Ensure repo is up to date
         run: |
           git config --global user.name 'Citron-Bot'
           git config --global user.email 'bot@citron-emu.org'
-          git pull origin main
+          git pull origin main --rebase
 
       - name: Run Generator
         run: python scripts/generate_list.py
@@ -45,5 +43,3 @@ jobs:
           commit_message: "Auto-update list from Issue #${{ github.event.issue.number }}"
           file_pattern: 'compatibility_list.json'
           branch: main
-          # This handles the rebase/pull automatically if the remote changed
-          push_options: '--force'
