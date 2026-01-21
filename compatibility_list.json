@@ -136,6 +136,15 @@
   },
   {
     "compatibility": 0,
+    "directory": "Super Monkey Ball Banana Rumble",
+    "releases": [
+      {
+        "id": "010031F019294000"
+      }
+    ]
+  },
+  {
+    "compatibility": 0,
     "directory": "Super Smash Bros. Ultimate",
     "releases": [
       {
