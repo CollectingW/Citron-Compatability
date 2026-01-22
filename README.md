@@ -1,5 +1,7 @@
 # 🍋 Citron Compatibility Database
 
+DISCLAIMER: Compatibility Reports are NOT Bug Reports. Albiet that they can coorelate, please do not submit or abuse the Compatibility Report feature & use it for requiring assistance about emulation. If you don't know how to properly send a Compatibility Report, it's advised to avoid using the feature entirely and instead ask in the Discord if it's appropriate, as your report may be deleted & you may be blocked from the repository.
+
 Welcome to the official compatibility tracking repository for the **Citron Emulator**. This project serves as a centralized, community-driven database to document how well games perform on Citron. 
 
 By leveraging GitHub’s Issue Forms and automated CI/CD pipelines, we ensure that compatibility data is always up-to-date and accessible directly within the emulator.
