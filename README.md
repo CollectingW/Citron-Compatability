@@ -1,6 +1,10 @@
 # 🍋 Citron Compatibility Database
 
-DISCLAIMER: Compatibility Reports are NOT Bug Reports. Albiet that they can coorelate, please do not submit or abuse the Compatibility Report feature & use it for requiring assistance about emulation. If you don't know how to properly send a Compatibility Report, it's advised to avoid using the feature entirely and instead ask in the Discord if it's appropriate, as your report may be deleted & you may be blocked from the repository.
+DISCLAIMER: Please read Evilperson1337's guide before submitting a report: https://evilperson1337.notion.site/Submitting-a-Compatibility-Report-2f057c2edaf680fe94bbd404a9b6beab
+
+---
+
+Compatibility Reports are NOT Bug Reports. Albiet that they can coorelate, please do not submit or abuse the Compatibility Report feature & use it for requiring assistance about emulation. If you don't know how to properly send a Compatibility Report, it's advised to avoid using the feature entirely and instead ask in the Discord if it's appropriate, as your report may be deleted & you may be blocked from the repository.
 
 ---
 
