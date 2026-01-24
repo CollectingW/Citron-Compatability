@@ -217,6 +217,15 @@
   },
   {
     "compatibility": 0,
+    "directory": "Pokémon: Let's Go, Pikachu!",
+    "releases": [
+      {
+        "id": "010003F003A34000"
+      }
+    ]
+  },
+  {
+    "compatibility": 0,
     "directory": "Red Dead Redemption",
     "releases": [
       {
