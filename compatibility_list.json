@@ -180,6 +180,15 @@
     ]
   },
   {
+    "compatibility": 3,
+    "directory": "Nintendo Switch Sports",
+    "releases": [
+      {
+        "id": "0100D2F00D5C0000"
+      }
+    ]
+  },
+  {
     "compatibility": 0,
     "directory": "POKKÉN TOURNAMENT DX",
     "releases": [
