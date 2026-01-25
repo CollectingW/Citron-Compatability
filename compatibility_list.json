@@ -379,6 +379,15 @@
   },
   {
     "compatibility": 1,
+    "directory": "Xenoblade Chronicles 3",
+    "releases": [
+      {
+        "id": "010074F013262000"
+      }
+    ]
+  },
+  {
+    "compatibility": 1,
     "directory": "Xenoblade Chronicles X: Definitive Edition",
     "releases": [
       {
