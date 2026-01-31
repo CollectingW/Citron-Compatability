@@ -55,6 +55,15 @@
   },
   {
     "compatibility": 1,
+    "directory": "High On Life",
+    "releases": [
+      {
+        "id": "0100C1101EE5A000"
+      }
+    ]
+  },
+  {
+    "compatibility": 1,
     "directory": "Hyrule Warriors: Age of Calamity",
     "releases": [
       {
