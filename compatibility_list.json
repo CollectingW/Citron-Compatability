@@ -54,6 +54,15 @@
     ]
   },
   {
+    "compatibility": 0,
+    "directory": "Disney Illusion Island",
+    "releases": [
+      {
+        "id": "0100FA401961E000"
+      }
+    ]
+  },
+  {
     "compatibility": 4,
     "directory": "F-ZERO 99",
     "releases": [
