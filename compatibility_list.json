@@ -117,6 +117,15 @@
     ]
   },
   {
+    "compatibility": 0,
+    "directory": "Kirby Star Allies",
+    "releases": [
+      {
+        "id": "01007E3006DDA000"
+      }
+    ]
+  },
+  {
     "compatibility": 1,
     "directory": "Luigi's Mansion 3",
     "releases": [
