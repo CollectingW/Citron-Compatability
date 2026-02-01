@@ -45,6 +45,15 @@
     ]
   },
   {
+    "compatibility": 0,
+    "directory": "Cruis'n Blast",
+    "releases": [
+      {
+        "id": "0100B41013C82000"
+      }
+    ]
+  },
+  {
     "compatibility": 4,
     "directory": "F-ZERO 99",
     "releases": [
