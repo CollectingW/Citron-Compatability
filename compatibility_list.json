@@ -82,6 +82,15 @@
   },
   {
     "compatibility": 1,
+    "directory": "Fire Emblem: Three Houses",
+    "releases": [
+      {
+        "id": "010055D009F78000"
+      }
+    ]
+  },
+  {
+    "compatibility": 1,
     "directory": "High On Life",
     "releases": [
       {
