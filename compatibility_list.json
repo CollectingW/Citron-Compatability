@@ -457,5 +457,14 @@
         "id": "0100453019AA8000"
       }
     ]
+  },
+  {
+    "compatibility": 0,
+    "directory": "Yoshi's Crafted World",
+    "releases": [
+      {
+        "id": "01006000040C2000"
+      }
+    ]
   }
 ]
