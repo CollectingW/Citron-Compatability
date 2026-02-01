@@ -279,6 +279,15 @@
     ]
   },
   {
+    "compatibility": 1,
+    "directory": "Princess Peach: Showtime!",
+    "releases": [
+      {
+        "id": "01007A3009184000"
+      }
+    ]
+  },
+  {
     "compatibility": 0,
     "directory": "Red Dead Redemption",
     "releases": [
