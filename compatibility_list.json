@@ -63,6 +63,15 @@
     ]
   },
   {
+    "compatibility": 0,
+    "directory": "Fire Emblem Engage",
+    "releases": [
+      {
+        "id": "0100A6301214E000"
+      }
+    ]
+  },
+  {
     "compatibility": 1,
     "directory": "High On Life",
     "releases": [
