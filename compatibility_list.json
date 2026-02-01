@@ -73,6 +73,15 @@
   },
   {
     "compatibility": 1,
+    "directory": "Fire Emblem Warriors: Three Hopes",
+    "releases": [
+      {
+        "id": "010071F0143EA000"
+      }
+    ]
+  },
+  {
+    "compatibility": 1,
     "directory": "High On Life",
     "releases": [
       {
