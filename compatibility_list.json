@@ -262,6 +262,15 @@
   },
   {
     "compatibility": 0,
+    "directory": "Sonic Racing: CrossWorlds",
+    "releases": [
+      {
+        "id": "01006E001823C000"
+      }
+    ]
+  },
+  {
+    "compatibility": 0,
     "directory": "Splatoon 3",
     "releases": [
       {
