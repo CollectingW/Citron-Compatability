@@ -1,3 +1,5 @@
+[**View the Full Compatibility List Here**](COMPATIBILITY.md)
+
 # 🍋 Citron Compatibility Database
 
 DISCLAIMER: Please read Evilperson1337's guide before submitting a report: https://evilperson1337.notion.site/Submitting-a-Compatibility-Report-2f057c2edaf680fe94bbd404a9b6beab
