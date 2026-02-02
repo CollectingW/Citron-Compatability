@@ -73,6 +73,15 @@
   },
   {
     "compatibility": 0,
+    "directory": "FINAL FANTASY TACTICS - The Ivalice Chronicles",
+    "releases": [
+      {
+        "id": "010038B015560000"
+      }
+    ]
+  },
+  {
+    "compatibility": 0,
     "directory": "Fire Emblem Engage",
     "releases": [
       {
@@ -104,6 +113,15 @@
     "releases": [
       {
         "id": "0100C1101EE5A000"
+      }
+    ]
+  },
+  {
+    "compatibility": 1,
+    "directory": "Hogwarts Legacy",
+    "releases": [
+      {
+        "id": "0100F7E00C70E000"
       }
     ]
   },
@@ -248,6 +266,15 @@
     "releases": [
       {
         "id": "0100D2F00D5C0000"
+      }
+    ]
+  },
+  {
+    "compatibility": 0,
+    "directory": "OCTOPATH TRAVELER 0",
+    "releases": [
+      {
+        "id": "01005270232F2000"
       }
     ]
   },
@@ -419,6 +446,15 @@
     "releases": [
       {
         "id": "01006A800016E000"
+      }
+    ]
+  },
+  {
+    "compatibility": 0,
+    "directory": "Sushi Striker: The Way of Sushido",
+    "releases": [
+      {
+        "id": "0100DDD0085A4000"
       }
     ]
   },
