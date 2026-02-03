@@ -18,6 +18,15 @@
     ]
   },
   {
+    "compatibility": 5,
+    "directory": "Arcade Archives RIDGE RACER",
+    "releases": [
+      {
+        "id": "010046F022B3A000"
+      }
+    ]
+  },
+  {
     "compatibility": 0,
     "directory": "ARMS",
     "releases": [
@@ -68,6 +77,15 @@
     "releases": [
       {
         "id": "0100CCF019C8C000"
+      }
+    ]
+  },
+  {
+    "compatibility": 3,
+    "directory": "FIFA 21 Legacy Edition",
+    "releases": [
+      {
+        "id": "01000A001171A000"
       }
     ]
   },
@@ -275,6 +293,15 @@
     "releases": [
       {
         "id": "01005270232F2000"
+      }
+    ]
+  },
+  {
+    "compatibility": 4,
+    "directory": "Penny's Big Breakaway",
+    "releases": [
+      {
+        "id": "0100CA901AA9C000"
       }
     ]
   },
@@ -491,6 +518,15 @@
     "releases": [
       {
         "id": "0100F2C0115B6000"
+      }
+    ]
+  },
+  {
+    "compatibility": 3,
+    "directory": "The Smurfs: Dreams",
+    "releases": [
+      {
+        "id": "01008E401E6D0000"
       }
     ]
   },
