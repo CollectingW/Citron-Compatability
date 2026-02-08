@@ -261,6 +261,15 @@
     ]
   },
   {
+    "compatibility": 1,
+    "directory": "Miitopia",
+    "releases": [
+      {
+        "id": "01003DA010E8A000"
+      }
+    ]
+  },
+  {
     "compatibility": 0,
     "directory": "MONSTER HUNTER GENERATIONS ULTIMATE",
     "releases": [
