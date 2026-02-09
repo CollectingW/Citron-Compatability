@@ -45,6 +45,15 @@
     ]
   },
   {
+    "compatibility": 1,
+    "directory": "Contra: Operation Galuga",
+    "releases": [
+      {
+        "id": "0100CF401A98E000"
+      }
+    ]
+  },
+  {
     "compatibility": 0,
     "directory": "Crash™ Team Racing Nitro-Fueled",
     "releases": [
@@ -68,6 +77,15 @@
     "releases": [
       {
         "id": "0100FA401961E000"
+      }
+    ]
+  },
+  {
+    "compatibility": 3,
+    "directory": "Double Dragon Revive",
+    "releases": [
+      {
+        "id": "01006AE02236C000"
       }
     ]
   },
