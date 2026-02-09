@@ -315,6 +315,15 @@
     ]
   },
   {
+    "compatibility": 1,
+    "directory": "Pode",
+    "releases": [
+      {
+        "id": "01009440095FE000"
+      }
+    ]
+  },
+  {
     "compatibility": 0,
     "directory": "POKKÉN TOURNAMENT DX",
     "releases": [
