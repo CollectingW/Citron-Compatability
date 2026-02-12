@@ -522,6 +522,15 @@
     ]
   },
   {
+    "compatibility": 0,
+    "directory": "Tactics Ogre: Reborn",
+    "releases": [
+      {
+        "id": "0100E12013C1A000"
+      }
+    ]
+  },
+  {
     "compatibility": 1,
     "directory": "The Legend of Zelda: Breath of the Wild",
     "releases": [
