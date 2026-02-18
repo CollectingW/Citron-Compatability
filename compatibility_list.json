@@ -253,6 +253,15 @@
   },
   {
     "compatibility": 0,
+    "directory": "Mega Man 11",
+    "releases": [
+      {
+        "id": "0100B0C0086B0000"
+      }
+    ]
+  },
+  {
+    "compatibility": 0,
     "directory": "Metroid Dread",
     "releases": [
       {
