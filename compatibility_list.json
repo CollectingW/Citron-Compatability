@@ -55,6 +55,15 @@
   },
   {
     "compatibility": 0,
+    "directory": "Cadence of Hyrule: Crypt of the NecroDancer featuring The Legend of Zelda",
+    "releases": [
+      {
+        "id": "01000B900D8B0000"
+      }
+    ]
+  },
+  {
+    "compatibility": 0,
     "directory": "Clubhouse Games: 51 Worldwide Classics",
     "releases": [
       {
@@ -95,6 +104,15 @@
     "releases": [
       {
         "id": "0100FA401961E000"
+      }
+    ]
+  },
+  {
+    "compatibility": 0,
+    "directory": "Donkey Kong Country Returns HD",
+    "releases": [
+      {
+        "id": "01009D901BC56000"
       }
     ]
   },
